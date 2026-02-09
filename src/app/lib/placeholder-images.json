@@ -2,34 +2,88 @@
 {
   "placeholderImages": [
     {
-      "id": "project-1",
-      "description": "A sleek e-commerce platform dashboard with charts and product metrics.",
-      "imageUrl": "https://picsum.photos/seed/project1/800/600",
-      "imageHint": "dashboard dashboard-ui"
+      "id": "churn-prediction",
+      "description": "Analytics dashboard showing customer churn metrics and behavioral segments.",
+      "imageUrl": "https://picsum.photos/seed/churn/800/600",
+      "imageHint": "analytics dashboard"
     },
     {
-      "id": "project-2",
-      "description": "Mobile application interface for a fitness tracking app.",
-      "imageUrl": "https://picsum.photos/seed/project2/800/600",
-      "imageHint": "mobile app-interface"
+      "id": "stock-forecasting",
+      "description": "Financial line chart showing historical stock prices with predicted future trends.",
+      "imageUrl": "https://picsum.photos/seed/stocks/800/600",
+      "imageHint": "stock chart"
     },
     {
-      "id": "project-3",
-      "description": "Architectural visualization of a modern smart home.",
-      "imageUrl": "https://picsum.photos/seed/project3/800/600",
-      "imageHint": "modern architecture"
+      "id": "restaurant-rec",
+      "description": "Mobile application interface displaying personalized restaurant recommendations.",
+      "imageUrl": "https://picsum.photos/seed/restaurant/800/600",
+      "imageHint": "app interface"
     },
     {
-      "id": "project-4",
-      "description": "Social media platform for artists showcasing digital illustrations.",
-      "imageUrl": "https://picsum.photos/seed/project4/800/600",
-      "imageHint": "art gallery"
+      "id": "hybrid-chess",
+      "description": "Digital chessboard interface with an AI evaluation heatmap overlay.",
+      "imageUrl": "https://picsum.photos/seed/chess1/800/600",
+      "imageHint": "chess board"
     },
     {
-      "id": "project-5",
-      "description": "Data analytics platform interface with complex heatmaps and data points.",
-      "imageUrl": "https://picsum.photos/seed/project5/800/600",
-      "imageHint": "data visualization"
+      "id": "cpp-chess",
+      "description": "Sleek dark-themed chess engine interface with match statistics.",
+      "imageUrl": "https://picsum.photos/seed/chess2/800/600",
+      "imageHint": "dark chess"
+    },
+    {
+      "id": "animal-detection",
+      "description": "CCTV security footage frame with bounding boxes around detected animals.",
+      "imageUrl": "https://picsum.photos/seed/animal/800/600",
+      "imageHint": "security camera"
+    },
+    {
+      "id": "cv-pipeline",
+      "description": "A technical diagram illustrating an end-to-end computer vision pipeline.",
+      "imageUrl": "https://picsum.photos/seed/cvpipe/800/600",
+      "imageHint": "pipeline diagram"
+    },
+    {
+      "id": "mlops-forge",
+      "description": "Dashboard for an MLOps platform showing model training and lifecycle metrics.",
+      "imageUrl": "https://picsum.photos/seed/mlops/800/600",
+      "imageHint": "dashboard ui"
+    },
+    {
+      "id": "ml-cicd",
+      "description": "Visualization of a GitHub Actions automated workflow for machine learning.",
+      "imageUrl": "https://picsum.photos/seed/mlcicd/800/600",
+      "imageHint": "workflow diagram"
+    },
+    {
+      "id": "aws-cicd",
+      "description": "Cloud architecture diagram showing AWS CI/CD services like CodePipeline.",
+      "imageUrl": "https://picsum.photos/seed/awscicd/800/600",
+      "imageHint": "aws architecture"
+    },
+    {
+      "id": "data-pipeline",
+      "description": "Information graphic showing data flow from ingestion to analytics.",
+      "imageUrl": "https://picsum.photos/seed/datapipe/800/600",
+      "imageHint": "data flow"
+    },
+    {
+      "id": "pdf-ai-saas",
+      "description": "A modern web application interface featuring a chat panel next to a PDF document.",
+      "imageUrl": "https://picsum.photos/seed/pdfai/800/600",
+      "imageHint": "saas interface"
+    },
+    {
+      "id": "chatsphere",
+      "description": "Real-time chat application interface with active message threads.",
+      "imageUrl": "https://picsum.photos/seed/chat/800/600",
+      "imageHint": "chat app"
+    },
+    {
+      "id": "zoom-lite",
+      "description": "Video conferencing screen showing a grid of multiple participants.",
+      "imageUrl": "https://picsum.photos/seed/video/800/600",
+      "imageHint": "video call"
     },
     {
       "id": "headshot",

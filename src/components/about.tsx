@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent } from "./ui/card";
@@ -6,10 +7,6 @@ import { Badge } from "./ui/badge";
 export function About() {
   const headshot = PlaceHolderImages.find(img => img.id === "headshot");
 
-  if (!headshot) {
-    return null;
-  }
-
   return (
     <section id="about" className="py-24 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,13 +14,15 @@ export function About() {
           <div className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-accent rounded-2xl opacity-20 group-hover:opacity-40 transition-opacity blur-lg" />
             <div className="relative rounded-2xl overflow-hidden aspect-square">
-              <Image
-                src={headshot.imageUrl}
-                alt="Developer headshot"
-                fill
-                className="object-cover"
-                data-ai-hint={headshot.imageHint}
-              />
+              {headshot && (
+                <Image
+                  src={headshot.imageUrl}
+                  alt="Developer headshot"
+                  fill
+                  className="object-cover"
+                  data-ai-hint={headshot.imageHint}
+                />
+              )}
             </div>
             <Card className="absolute -bottom-6 -right-6 md:right-10 w-48 bg-background border-primary/20 shadow-xl hidden md:block">
               <CardContent className="p-4 flex flex-col items-center text-center">
