@@ -1,0 +1,41 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "A sleek e-commerce platform dashboard with charts and product metrics.",
+      "imageUrl": "https://picsum.photos/seed/project1/800/600",
+      "imageHint": "dashboard dashboard-ui"
+    },
+    {
+      "id": "project-2",
+      "description": "Mobile application interface for a fitness tracking app.",
+      "imageUrl": "https://picsum.photos/seed/project2/800/600",
+      "imageHint": "mobile app-interface"
+    },
+    {
+      "id": "project-3",
+      "description": "Architectural visualization of a modern smart home.",
+      "imageUrl": "https://picsum.photos/seed/project3/800/600",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "project-4",
+      "description": "Social media platform for artists showcasing digital illustrations.",
+      "imageUrl": "https://picsum.photos/seed/project4/800/600",
+      "imageHint": "art gallery"
+    },
+    {
+      "id": "project-5",
+      "description": "Data analytics platform interface with complex heatmaps and data points.",
+      "imageUrl": "https://picsum.photos/seed/project5/800/600",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "headshot",
+      "description": "Professional headshot of a developer in a modern office setting.",
+      "imageUrl": "https://picsum.photos/seed/headshot/400/400",
+      "imageHint": "professional headshot"
+    }
+  ]
+}
