@@ -1,8 +1,6 @@
-
 "use client";
 
 import Link from "next/link";
-import { ThemeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -38,14 +36,12 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <ThemeToggle />
             <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
               Resume
             </Button>
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
-            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground p-2 focus:outline-none"
