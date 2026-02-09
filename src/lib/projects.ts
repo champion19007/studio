@@ -35,7 +35,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("churn-prediction").url,
     imageHint: getProjectImage("churn-prediction").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/bank-churn-mlops-pipeline"
   },
   {
     id: "stock-forecasting",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("stock-forecasting").url,
     imageHint: getProjectImage("stock-forecasting").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/Advanced-Stock-Forecaster-CNN-BiLSTM-GRU-"
   },
   {
     id: "restaurant-rec",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("restaurant-rec").url,
     imageHint: getProjectImage("restaurant-rec").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/City-Cuisine-Based-Restaurant-Recommender-Using-Yelp-Dataset"
   },
   {
     id: "hybrid-chess",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("hybrid-chess").url,
     imageHint: getProjectImage("hybrid-chess").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/RL-Chess-Engine-Minimax-MCTS"
   },
   {
     id: "cpp-chess",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("cpp-chess").url,
     imageHint: getProjectImage("cpp-chess").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/Chess_engine_with_Deep_Reinforcement_learning-minmax-mcts-Cpp"
   },
   {
     id: "animal-detection",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("animal-detection").url,
     imageHint: getProjectImage("animal-detection").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/Real-Time-Animal-Detection-Using-CCTV-Camera-OpenVision"
   },
   {
     id: "cv-pipeline",
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("cv-pipeline").url,
     imageHint: getProjectImage("cv-pipeline").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/end-to-end-cv-mlops-project"
   },
   {
     id: "mlops-forge",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("mlops-forge").url,
     imageHint: getProjectImage("mlops-forge").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/MLOps-Forge"
   },
   {
     id: "ml-cicd",
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("ml-cicd").url,
     imageHint: getProjectImage("ml-cicd").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/ci-cd-mlops"
   },
   {
     id: "aws-cicd",
@@ -152,7 +152,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("aws-cicd").url,
     imageHint: getProjectImage("aws-cicd").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/aws-cicd-pipeline"
   },
   {
     id: "data-pipeline",
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("data-pipeline").url,
     imageHint: getProjectImage("data-pipeline").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/End-to-End-Data-Pipeline"
   },
   {
     id: "pdf-ai-saas",
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("pdf-ai-saas").url,
     imageHint: getProjectImage("pdf-ai-saas").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/pdf-ai-saas"
   },
   {
     id: "chatsphere",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("chatsphere").url,
     imageHint: getProjectImage("chatsphere").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/ChatSphere"
   },
   {
     id: "zoom-lite",
@@ -204,6 +204,6 @@ export const projects: Project[] = [
     imageUrl: getProjectImage("zoom-lite").url,
     imageHint: getProjectImage("zoom-lite").hint,
     link: "#",
-    github: "#"
+    github: "https://github.com/champion19007/F-13-zoom-lite-clone-"
   }
 ];
