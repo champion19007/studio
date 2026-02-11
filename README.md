@@ -1,24 +1,21 @@
-# Professional AI & ML Engineer Portfolio
+# Professional AI & ML Engineer Portfolio (Static Export)
 
-A high-performance, modern portfolio template inspired by the Stripe aesthetic. Designed for AI/ML engineers and data scientists to showcase their research, professional experience, and technical projects.
+A high-performance, modern portfolio built with Next.js, optimized for static hosting on platforms like GitHub Pages, Netlify, and Vercel.
 
-## 🚀 Features
+## 🚀 Static Site Features
 
+- **Static Export**: Generates pure HTML/CSS/JS files via `next export`. No Node.js runtime required on the server.
 - **Stripe-Inspired Design**: Elegant mesh gradients, glassmorphism, and premium typography.
-- **Fully Responsive**: Optimized for mobile, tablet, and desktop devices.
-- **Project Gallery**: Detailed project cards with dynamic hover effects and dedicated detail pages.
-- **Research & Publications**: Showcase academic contributions and scholarly impact.
-- **Static Site Export**: Ready to be deployed as a pure HTML/CSS/JS site.
-- **Interactive UI**: Scroll-triggered animations, dynamic skill progress bars, and floating navigation.
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop.
+- **Interactive UI**: Scroll-triggered animations and dynamic hover effects using pure CSS and Client-side React.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Framework**: [Next.js 15 (Static Export)](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **UI Components**: [ShadCN UI](https://ui.shadcn.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) (via Tailwind/CSS)
 
 ## 📦 Getting Started
 
@@ -32,28 +29,26 @@ npm install
 npm run dev
 ```
 
-## 🚢 Deployment Options
-
-### Option 1: Static Export (HTML/CSS/JS)
-To generate a static version of the site that can be hosted anywhere (GitHub Pages, Netlify, etc.):
+### 3. Build Static Site
+To generate the static HTML files:
 ```bash
 npm run build
 ```
-The static files will be generated in the `out/` directory. You can host the contents of this folder as a traditional static site.
+The static files will be generated in the `out/` directory.
 
-### Option 2: Next.js Managed Hosting
-The project is optimized for [Firebase App Hosting](https://firebase.google.com/docs/app-hosting) and Vercel. Simply connect your repository and it will deploy automatically.
+## 🚢 Deployment
 
-## 🔧 Customization Guide
+### GitHub Pages / Netlify / Vercel
+1. Run `npm run build`.
+2. Upload the contents of the `out/` folder to your static hosting provider.
+3. For GitHub Pages, ensure you set the build directory to `out`.
 
-To personalize this portfolio, update the following files:
+## 🔧 Personalization
 
-- **Personal Data**: Edit `src/app/page.tsx` and individual component files.
-- **Projects**: Modify `src/lib/projects.ts` to add or remove your work.
-- **Experience & Education**: Update `src/components/experience.tsx` and `src/components/education.tsx`.
-- **Skills**: Adjust the levels and categories in `src/components/skills.tsx`.
-- **Theme/Colors**: Change primary and accent HSL values in `src/app/globals.css`.
+- **Projects**: Modify `src/lib/projects.ts`.
+- **Experience**: Update `src/components/experience.tsx`.
+- **Education**: Update `src/components/education.tsx`.
+- **Theme**: Adjust HSL values in `src/app/globals.css`.
 
 ## 📄 License
-
-This project is open-source. Feel free to use and modify it for your own portfolio.
+Open-source and free to use.
