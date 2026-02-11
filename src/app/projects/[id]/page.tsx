@@ -9,8 +9,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function ProjectDetailPage({ params }: { params: { id: string } }) {
-  const project = projects.find(p => p.id === params.id);
+export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = projects.find(p => p.id === id);
 
   if (!project) {
     notFound();
@@ -41,38 +42,42 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
               </div>
 
               <div className="prose prose-invert max-w-none">
-                <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8">{project.title}</h1>
+                <h1 className="text-3xl md:text-5xl font-bold font-headline mb-8">{project.title}</h1>
                 
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Terminal className="mr-2 h-5 w-5 text-primary" /> Overview
-                </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-                  {project.longDescription}
-                </p>
+                <div className="space-y-12">
+                  <section>
+                    <h3 className="text-xl font-bold mb-4 flex items-center text-primary">
+                      <Terminal className="mr-2 h-5 w-5" /> Overview
+                    </h3>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      {project.longDescription}
+                    </p>
+                  </section>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-                  <div className="bg-card border border-border rounded-2xl p-8 hover:border-accent/50 transition-colors">
-                    <h3 className="text-xl font-bold mb-4 flex items-center">
-                      <AlertCircle className="mr-2 h-5 w-5 text-accent" /> Key Challenges
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {project.challenges}
-                    </p>
-                  </div>
-                  <div className="bg-card border border-border rounded-2xl p-8 hover:border-primary/50 transition-colors">
-                    <h3 className="text-xl font-bold mb-4 flex items-center">
-                      <CheckCircle2 className="mr-2 h-5 w-5 text-primary" /> Key Outcomes
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {project.outcomes}
-                    </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="bg-card border border-border rounded-2xl p-8 hover:border-accent/50 transition-colors glass-card">
+                      <h3 className="text-xl font-bold mb-4 flex items-center">
+                        <AlertCircle className="mr-2 h-5 w-5 text-accent" /> Key Challenges
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {project.challenges}
+                      </p>
+                    </div>
+                    <div className="bg-card border border-border rounded-2xl p-8 hover:border-primary/50 transition-colors glass-card">
+                      <h3 className="text-xl font-bold mb-4 flex items-center">
+                        <CheckCircle2 className="mr-2 h-5 w-5 text-primary" /> Key Outcomes
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {project.outcomes}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="space-y-12">
-              <div className="bg-secondary/30 rounded-3xl p-8 border border-border">
+              <div className="bg-secondary/30 rounded-3xl p-8 border border-border glass-card">
                 <h3 className="text-lg font-bold mb-6">Technologies Used</h3>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
@@ -84,12 +89,12 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
               </div>
 
               <div className="space-y-4">
-                <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg">
+                <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg rounded-xl font-bold">
                   <Link href={project.link}>
                     Launch Live Project <ExternalLink className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="w-full py-6 text-lg">
+                <Button asChild variant="outline" className="w-full py-6 text-lg rounded-xl font-bold">
                   <Link href={project.github}>
                     View Source Code <Github className="ml-2 h-5 w-5" />
                   </Link>
@@ -98,7 +103,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
 
               <div className="pt-8 border-t border-border">
                 <p className="text-sm text-muted-foreground italic">
-                  Need a similar solution for your business? 
+                  Looking for AI/ML engineering expertise? 
                   <Link href="/#contact" className="ml-1 text-primary hover:underline font-bold">Get in touch</Link>
                 </p>
               </div>

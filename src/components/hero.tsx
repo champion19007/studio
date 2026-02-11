@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "./ui/button";
@@ -33,7 +34,7 @@ export function Hero() {
             </span>
           </div>
           
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold font-headline mb-6 md:mb-8 leading-[1.1] tracking-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold font-headline mb-6 md:mb-8 leading-[1.1] tracking-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Designing <br /> 
             <span className="text-gradient">Intelligent</span> Systems.
           </h1>
@@ -78,7 +79,7 @@ export function Hero() {
         </div>
       </div>
       
-      {/* Abstract floating elements - Hidden on smaller screens to save CPU/Memory */}
+      {/* Abstract floating elements */}
       <div className="hidden lg:block absolute top-1/4 right-0 w-[40vw] h-[40vw] bg-accent/10 rounded-full blur-[120px] -z-10 animate-float" style={{ animationDelay: '-2s' }} />
       <div className="hidden lg:block absolute -bottom-1/4 -left-1/4 w-[50vw] h-[50vw] bg-primary/10 rounded-full blur-[150px] -z-10 animate-float" />
     </section>
