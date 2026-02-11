@@ -5,7 +5,7 @@ export function Experience() {
     {
       company: "BCG",
       role: "Data Science Intern",
-      period: "2025 – 2026",
+      period: "Dec 2025 – May 2026",
       points: [
         "Conducted in-depth customer churn analysis to drive retention strategies.",
         "Built and optimized Random Forest models for high-accuracy behavior prediction.",
@@ -15,7 +15,7 @@ export function Experience() {
     {
       company: "Deloitte",
       role: "Data Analytics Intern",
-      period: "2025",
+      period: "Jan 2025 – Apr 2025",
       points: [
         "Built comprehensive Tableau dashboards for multi-dimensional data visualization.",
         "Performed forensic-style data analysis to identify anomalies and trends.",
@@ -25,7 +25,7 @@ export function Experience() {
     {
       company: "Main Flow Services & Technologies",
       role: "Software Intern",
-      period: "2024",
+      period: "May 2024 – July 2024",
       points: [
         "Trained and fine-tuned YOLO models for high-precision real-time object detection.",
         "Deployed Docker-based ROS2 systems integrating sensors and control modules.",
