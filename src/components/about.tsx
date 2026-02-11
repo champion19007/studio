@@ -2,7 +2,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { GraduationCap, MapPin } from "lucide-react";
+import { GraduationCap, MapPin, Brain } from "lucide-react";
 
 export function About() {
   const headshot = PlaceHolderImages.find(img => img.id === "headshot");
@@ -32,10 +32,13 @@ export function About() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-muted-foreground uppercase">Education</p>
-                    <p className="text-sm font-bold">B.Tech CSE (AI & ML)</p>
+                    <p className="text-sm font-bold">B.Tech, CSE (AI & ML)</p>
                   </div>
                 </div>
-                <p className="text-xs text-muted-foreground">Manipal University Jaipur, 2025</p>
+                <div className="flex items-center space-x-2 text-[10px] font-bold text-muted-foreground mb-1">
+                  <Brain className="h-3 w-3 text-accent" /> Specialization in Problem Solving
+                </div>
+                <p className="text-xs text-muted-foreground">Manipal University Jaipur, 2021 – 2025</p>
               </CardContent>
             </Card>
           </div>
