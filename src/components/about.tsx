@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { GraduationCap, MapPin, Brain, Sparkles, Loader2 } from "lucide-react";
+import { MapPin, Sparkles, Loader2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { generateAboutMe } from "@/ai/ai-about-me";
@@ -42,7 +40,7 @@ export function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-accent rounded-2xl opacity-10 group-hover:opacity-20 transition-opacity blur-xl" />
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-md mx-auto border border-border">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-md mx-auto border border-border shadow-2xl">
               {headshot && (
                 <Image
                   src={headshot.imageUrl}
@@ -53,23 +51,6 @@ export function About() {
                 />
               )}
             </div>
-            <Card className="absolute -bottom-6 -right-6 md:right-10 w-64 bg-background border-primary/20 shadow-2xl hidden md:block">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-3 mb-3">
-                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
-                    <GraduationCap className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-muted-foreground uppercase">Education</p>
-                    <p className="text-sm font-bold">B.Tech, CSE (AI & ML)</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-2 text-[10px] font-bold text-muted-foreground mb-1">
-                  <Brain className="h-3 w-3 text-accent" /> Specialization in Problem Solving
-                </div>
-                <p className="text-xs text-muted-foreground">Manipal University Jaipur, 2021 – 2025</p>
-              </CardContent>
-            </Card>
           </div>
 
           <div className="space-y-8">
