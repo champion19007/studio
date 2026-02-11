@@ -15,7 +15,7 @@ export function Hero() {
         <div className="max-w-4xl animate-fade-in-up">
           <div className="flex items-center space-x-2 text-primary mb-6 font-code">
             <Terminal className="h-4 w-4" />
-            <span className="text-sm uppercase tracking-widest font-semibold">AI & Machine Learning Engineer</span>
+            <span className="text-sm uppercase tracking-widest font-semibold">AI & Data Science Engineer</span>
           </div>
           
           <h1 className="text-5xl md:text-8xl font-bold font-headline mb-6 leading-tight tracking-tighter">
@@ -24,8 +24,8 @@ export function Hero() {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-            Designing next-generation intelligence through Deep Learning, Computer Vision, 
-            and scalable MLOps systems.
+            Hands-on experience in Computer Vision, Reinforcement Learning, Large Language Models, 
+            and deep learning systems.
           </p>
 
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 items-center sm:items-start">

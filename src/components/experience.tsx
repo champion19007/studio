@@ -3,26 +3,48 @@ import { Calendar, Building2, ChevronRight, Award } from "lucide-react";
 export function Experience() {
   const experiences = [
     {
-      company: "BCG",
-      role: "Data Science Job Simulation",
-      period: "Jan 2026",
+      company: "JPMorganChase",
+      role: "Quantitative Research Intern",
+      period: "Feb 2026 – Present",
       points: [
-        "Completed a comprehensive data science job simulation at BCG.",
-        "Conducted in-depth customer churn analysis to drive retention strategies.",
+        "Applying quantitative methods to financial modeling and risk assessment.",
+        "Developing algorithms for large-scale data analysis and market prediction.",
+        "Collaborating with research teams to optimize financial strategies using statistical learning."
+      ],
+      isSimulation: false
+    },
+    {
+      company: "Tata Group",
+      role: "Gen AI Data Analyst Intern",
+      period: "Jan 2026 – Present",
+      points: [
+        "Leveraging Generative AI and LLMs to automate complex data analysis workflows.",
+        "Building RAG systems for efficient knowledge retrieval from enterprise datasets.",
+        "Performing advanced data classification and sentiment analysis using transformer architectures."
+      ],
+      isSimulation: false
+    },
+    {
+      company: "BCG X",
+      role: "Data Science Intern",
+      period: "Nov 2025 – Jan 2026",
+      points: [
+        "Conducted a comprehensive customer churn analysis simulation at BCG X.",
         "Built and optimized Random Forest models for high-accuracy behavior prediction.",
-        "Presented executive-level analytical insights to key stakeholders."
+        "Showcased advanced analytics skills to identify key churn drivers and retention strategies.",
+        "Presented executive-level insights and data-driven recommendations."
       ],
       isSimulation: true
     },
     {
-      company: "Deloitte Australia",
-      role: "Data Analytics Job Simulation",
-      period: "Nov 2025",
+      company: "Deloitte",
+      role: "Trainee (Data Analytics)",
+      period: "Oct 2025 – Nov 2025",
       points: [
-        "Completed a comprehensive job simulation focusing on data analysis and forensic technology.",
-        "Developed an interactive data dashboard using Tableau to visualize key insights.",
-        "Performed forensic-style data analysis to identify anomalies and trends.",
-        "Derived business insights using Excel and structured data classification methodologies."
+        "Completed a forensic technology and data analytics job simulation.",
+        "Developed interactive Tableau dashboards for multi-dimensional data visualization.",
+        "Performed anomaly detection and trend analysis on large audit datasets.",
+        "Derived business intelligence insights using Excel and structured methodologies."
       ],
       isSimulation: true
     },
@@ -45,8 +67,8 @@ export function Experience() {
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Professional Journey</h2>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Applying machine learning and data science in diverse corporate environments 
-            and simulations to drive measurable business impact.
+            Applying machine learning, quantitative research, and data science in leading 
+            global organizations to drive intelligent solutions.
           </p>
         </div>
 

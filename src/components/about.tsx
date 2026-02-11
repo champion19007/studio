@@ -51,16 +51,13 @@ export function About() {
             <h2 className="text-4xl md:text-5xl font-bold font-headline mb-8">Professional Summary</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I am an AI and Machine Learning Engineer with deep experience across Computer Vision, 
-                Reinforcement Learning, and MLOps systems. I specialize in designing complex deep 
-                learning architectures and building real-time intelligent systems that solve 
-                real-world problems.
+                I am an AI & Data Science Engineer in training with hands-on experience in computer vision, 
+                reinforcement learning, large language models, and deep learning systems. 
               </p>
               <p>
-                My work spans from high-performance C++ chess engines to large-scale AWS-based CI/CD 
-                pipelines for machine learning. I have a strong background in research, having 
-                presented at top-tier venues like the American Control Conference (ACC) and published 
-                works on hybrid search algorithms and deep learning frameworks for bioinformatics.
+                Over the past few years, I've built and published projects ranging from autonomous 
+                driving agents and GAN architectures to hybrid chess engines (MCTS-Minimax with RLHF). 
+                I've applied my expertise at companies like JPMorganChase, Tata Group, and BCG X.
               </p>
             </div>
 
