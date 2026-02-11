@@ -12,6 +12,8 @@ export function Navbar() {
   const navLinks = [
     { name: "About", href: "/#about" },
     { name: "Skills", href: "/#skills" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Research", href: "/#research" },
     { name: "Projects", href: "/#projects" },
     { name: "Contact", href: "/#contact" },
   ];
@@ -21,8 +23,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold font-headline text-primary tracking-tighter">
-              APEX<span className="text-accent">.</span>
+            <Link href="/" className="text-xl font-bold font-headline text-primary tracking-tighter">
+              SYR<span className="text-accent">.</span>PANTHY
             </Link>
           </div>
           
@@ -31,13 +33,13 @@ export function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-xs uppercase tracking-widest font-semibold hover:text-primary transition-colors"
               >
                 {link.name}
               </Link>
             ))}
-            <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Resume
+            <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold" asChild>
+              <a href="mailto:saiyashwantreddypanthy@gmail.com">Hire Me</a>
             </Button>
           </div>
 
@@ -56,7 +58,7 @@ export function Navbar() {
       <div
         className={cn(
           "md:hidden absolute w-full bg-background border-b border-border transition-all duration-300 ease-in-out overflow-hidden",
-          isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         )}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -71,7 +73,9 @@ export function Navbar() {
             </Link>
           ))}
           <div className="px-3 py-2">
-            <Button className="w-full bg-primary text-primary-foreground">Resume</Button>
+            <Button className="w-full bg-primary text-primary-foreground font-bold" asChild>
+              <a href="mailto:saiyashwantreddypanthy@gmail.com">Hire Me</a>
+            </Button>
           </div>
         </div>
       </div>
