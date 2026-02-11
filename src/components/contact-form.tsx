@@ -53,7 +53,7 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-widest text-muted-foreground">Phone</h4>
-                  <p className="font-bold">+91 [Your Phone Number]</p>
+                  <p className="font-bold">+91 8369682814</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 p-4 rounded-xl bg-card border border-border">
