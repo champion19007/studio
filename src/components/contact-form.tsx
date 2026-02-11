@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { Mail, MessageSquare, Send, User, MapPin } from "lucide-react";
+import { Mail, MessageSquare, Send, User, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export function ContactForm() {
@@ -45,6 +45,15 @@ export function ContactForm() {
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-widest text-muted-foreground">Email</h4>
                   <p className="font-bold">saiyashwantreddypanthy@gmail.com</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4 p-4 rounded-xl bg-card border border-border">
+                <div className="p-3 bg-primary/10 text-primary rounded-full">
+                  <Phone className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-sm uppercase tracking-widest text-muted-foreground">Phone</h4>
+                  <p className="font-bold">+91 [Your Phone Number]</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 p-4 rounded-xl bg-card border border-border">
