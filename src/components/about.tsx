@@ -1,14 +1,12 @@
+
 "use client";
 
-import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { MapPin, Sparkles, Loader2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { generateAboutMe } from "@/ai/ai-about-me";
 
 export function About() {
-  const headshot = PlaceHolderImages.find(img => img.id === "headshot");
   const [isGenerating, setIsGenerating] = useState(false);
   const [currentBio, setCurrentBio] = useState(
     "I am an AI & Data Science Engineer in training with hands-on experience in computer vision, reinforcement learning, large language models, and deep learning systems."
@@ -37,22 +35,7 @@ export function About() {
   return (
     <section id="about" className="py-24 bg-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-accent rounded-2xl opacity-10 group-hover:opacity-20 transition-opacity blur-xl" />
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-md mx-auto border border-border shadow-2xl">
-              {headshot && (
-                <Image
-                  src={headshot.imageUrl}
-                  alt="Sai Yashwant Reddy Panthy"
-                  fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  data-ai-hint={headshot.imageHint}
-                />
-              )}
-            </div>
-          </div>
-
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
             <div>
               <div className="flex items-center space-x-2 text-primary mb-4">
@@ -86,28 +69,28 @@ export function About() {
                     <p className="text-xs font-bold text-primary animate-pulse uppercase tracking-widest">Generating AI Bio...</p>
                   </div>
                 ) : (
-                  <p className="text-lg text-muted-foreground leading-relaxed animate-in fade-in slide-in-from-bottom-2 duration-500">
+                  <p className="text-xl text-muted-foreground leading-relaxed animate-in fade-in slide-in-from-bottom-2 duration-500">
                     {currentBio}
                   </p>
                 )}
               </div>
               
-              <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+              <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
                 Over the past few years, I've built and published projects ranging from autonomous 
                 driving agents and GAN architectures to hybrid chess engines. I've applied my expertise at companies like JPMorganChase, Tata Group, and BCG X.
               </p>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 pt-8 border-t border-border">
               <h3 className="text-sm font-bold uppercase tracking-widest text-primary mb-6">Core Philosophy</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 rounded-xl bg-card border border-border group hover:border-primary/50 transition-colors">
-                  <h4 className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">System-Level Thinking</h4>
-                  <p className="text-sm text-muted-foreground">Approaching AI challenges as integrated software systems.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-6 rounded-xl bg-card border border-border group hover:border-primary/50 transition-colors">
+                  <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">System-Level Thinking</h4>
+                  <p className="text-sm text-muted-foreground">Approaching AI challenges as integrated software systems, focusing on scalability and robust architecture.</p>
                 </div>
-                <div className="p-4 rounded-xl bg-card border border-border group hover:border-primary/50 transition-colors">
-                  <h4 className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Research-Driven</h4>
-                  <p className="text-sm text-muted-foreground">Applying cutting-edge methodology to practical applications.</p>
+                <div className="p-6 rounded-xl bg-card border border-border group hover:border-primary/50 transition-colors">
+                  <h4 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Research-Driven</h4>
+                  <p className="text-sm text-muted-foreground">Applying cutting-edge methodology and peer-reviewed research to practical engineering problems.</p>
                 </div>
               </div>
             </div>
