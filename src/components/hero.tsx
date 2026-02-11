@@ -22,49 +22,41 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Dynamic Background Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-[120px] -z-10 animate-pulse-glow" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-[140px] -z-10 animate-float" />
-      <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-primary/5 rounded-full blur-[60px] -z-10 animate-float" style={{ animationDelay: '2s' }} />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden grid-pattern">
+      <div className="stripe-mesh" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative">
         <div className="max-w-4xl">
-          <div className="flex items-center space-x-2 text-primary mb-6 font-code animate-fade-in-up">
-            <Terminal className="h-4 w-4 animate-pulse" />
-            <span className="text-sm uppercase tracking-widest font-semibold min-h-[1.5rem] flex items-center">
-              {text}<span className="inline-block w-1 h-4 bg-primary ml-1 animate-blink"></span>
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-8 animate-fade-in-up">
+            <Terminal className="h-3 w-3" />
+            <span className="text-[10px] uppercase tracking-widest font-bold">
+              {text}<span className="inline-block w-1 h-3 bg-primary ml-1 animate-pulse"></span>
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-bold font-headline mb-6 leading-tight tracking-tighter animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Sai Yashwant <br /> 
-            <span className="text-primary relative inline-block">
-              Reddy Panthy
-              <span className="absolute -right-8 -top-4 text-accent/50 animate-bounce">
-                <Sparkles className="h-6 w-6" />
-              </span>
-            </span>
+          <h1 className="text-6xl md:text-9xl font-bold font-headline mb-8 leading-[1.1] tracking-tight animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            Designing <br /> 
+            <span className="text-gradient">Intelligent</span> Systems.
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            Architecting high-performance intelligence systems through <span className="text-foreground font-semibold">Computer Vision</span>, <span className="text-foreground font-semibold">Reinforcement Learning</span>, and <span className="text-foreground font-semibold">MLOps</span>.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            Sai Yashwant Reddy Panthy — Architecting the future through <span className="text-foreground font-semibold">Computer Vision</span>, <span className="text-foreground font-semibold">Reinforcement Learning</span>, and robust <span className="text-foreground font-semibold">MLOps</span> pipelines.
           </p>
 
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 items-center sm:items-start animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-7 text-lg font-bold w-full sm:w-auto transition-all hover:scale-105 active:scale-95 hover:shadow-lg hover:shadow-primary/20">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center sm:items-start animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-7 rounded-full text-lg font-bold w-full sm:w-auto shadow-xl shadow-primary/20 transition-all hover:scale-105 active:scale-95">
               <Link href="/#projects">
-                Explore My Work <ArrowRight className="ml-2 h-5 w-5" />
+                View Projects <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             
-            <Button asChild variant="outline" size="lg" className="px-8 py-7 text-lg font-bold border-primary/50 text-primary hover:bg-primary/5 w-full sm:w-auto transition-all hover:scale-105 active:scale-95 group">
+            <Button asChild variant="outline" size="lg" className="px-8 py-7 rounded-full text-lg font-bold border-white/10 text-foreground hover:bg-white/5 w-full sm:w-auto transition-all hover:scale-105 active:scale-95 group">
               <a href={resumeLink} target="_blank" rel="noopener noreferrer">
-                View Resume <FileText className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
+                Resume <FileText className="ml-2 h-5 w-5 opacity-50 group-hover:opacity-100 transition-opacity" />
               </a>
             </Button>
 
-            <div className="flex items-center space-x-4 pt-4 sm:pt-0 sm:ml-4">
+            <div className="flex items-center space-x-2 pt-4 sm:pt-0 sm:ml-4">
               {[
                 { icon: Github, href: "https://github.com/champion19007" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/saiyashwantreddy" },
@@ -73,12 +65,12 @@ export function Hero() {
                 <Button 
                   key={i}
                   asChild 
-                  variant="outline" 
+                  variant="ghost" 
                   size="icon" 
-                  className="h-14 w-14 rounded-full border-border hover:border-primary hover:text-primary transition-all hover:-translate-y-2 active:scale-90"
+                  className="h-12 w-12 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
                 >
                   <a href={social.href} target="_blank" rel="noopener noreferrer">
-                    <social.icon className="h-6 w-6" />
+                    <social.icon className="h-5 w-5" />
                   </a>
                 </Button>
               ))}
@@ -86,6 +78,10 @@ export function Hero() {
           </div>
         </div>
       </div>
+      
+      {/* Abstract floating elements */}
+      <div className="absolute top-1/4 right-0 w-[40vw] h-[40vw] bg-accent/10 rounded-full blur-[120px] -z-10 animate-float" style={{ animationDelay: '-2s' }} />
+      <div className="absolute -bottom-1/4 -left-1/4 w-[50vw] h-[50vw] bg-primary/10 rounded-full blur-[150px] -z-10 animate-float" />
     </section>
   );
 }
